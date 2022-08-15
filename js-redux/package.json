@@ -16,6 +16,7 @@
 		"nodemon": "^2.0.19"
 	},
 	"dependencies": {
+		"immer": "^9.0.15",
 		"redux": "^4.2.0"
 	}
 }

@@ -1,4 +1,4 @@
-REDUX
+/* --------------- REDUX --------------- */
 
 Store --> Holds the state of the application
 Action --> Describes what happened in the application
@@ -15,3 +15,11 @@ Responsibilities of the store function:
 3. Allows state to be updated via dispatch(action);
 4. Registers listeners via subscriber(listener);
 5. Handles unregistered of listeners via the function returned by subscribe(listener)
+
+
+/* --------------- ABOUT IMMER --------------- */
+Since states are immutable in redux, therefore, while returning a state like object from reducers, we need to do it very precisely so that every single field of the state is safely copied to the object returned from the reducer.
+
+Using a different npm library named immer, we don't have to worry about this scenario any more and can simply update and return only that field that is required to be updated and don't have to return the entire state as we do it in reducers.
+
+The syntax is used in nestedState.js
