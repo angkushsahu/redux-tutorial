@@ -23,3 +23,14 @@ Since states are immutable in redux, therefore, while returning a state like obj
 Using a different npm library named immer, we don't have to worry about this scenario any more and can simply update and return only that field that is required to be updated and don't have to return the entire state as we do it in reducers.
 
 The syntax is used in nestedState.js
+
+/* --------------- ABOUT REDUX-THUNK --------------- */
+Redux-thunk library is used to perform certain asynchronous operations while using redux, it is generally used to make async API calls (or any other asynchronous operations).
+
+It returns a function instead of an action.
+The function that is returned can have side-effects (or in other words, it can be asynchronous).
+
+/* --------------- REDUX CONCERNS --------------- */
+Redux requires a lot of boilerplate code such as action, action object, action creator, switch statement in reducers etc.
+A lot of other packages have to be installed to work with redux such as redux-thunk, immer, redux-devtools etc.
+Solution :- Redux toolkit library

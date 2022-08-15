@@ -5,3 +5,7 @@
 # react-redux
 /react-redux/node_modules
 /react-redux/reference.txt
+
+# js-redux-toolkit
+/js-redux-toolkit/node_modules
+/js-redux-toolkit/reference.txt
