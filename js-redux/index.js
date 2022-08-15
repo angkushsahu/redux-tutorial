@@ -1,7 +1,6 @@
-// Start from video number 10
-
-// import { createStore, bindActionCreators } from "redux"
-import { createStore, combineReducers } from "redux";
+const { applyMiddleware, combineReducers, createStore } = require("redux");
+const { createLogger } = require("redux-logger");
+const logger = createLogger();
 
 const CAKE_ORDERED = "CAKE_ORDERED";
 const CAKE_RESTOCKED = "CAKE_RESTOCKED";
@@ -83,15 +82,12 @@ function iceCreamReducer(state = initialIceCreamState, action) {
 const rootReducer = combineReducers({ cake: cakeReducer, iceCream: iceCreamReducer });
 
 // creating store
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, applyMiddleware(logger));
 console.log("🔰 Initial state 🔰");
 console.table(store.getState());
 
 // subscribing store
-const unsubscribe = store.subscribe(() => {
-	console.log("🚀 Updated state 🚀");
-	console.table(store.getState());
-});
+const unsubscribe = store.subscribe(() => {});
 
 // dispatching actions
 store.dispatch(orderCake(1));

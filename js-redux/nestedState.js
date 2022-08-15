@@ -1,5 +1,5 @@
-import { createStore } from "redux";
-import { produce } from "immer";
+const { createStore } = require("redux");
+const { produce } = require("immer");
 
 const initialState = {
 	name: "Angkush",
