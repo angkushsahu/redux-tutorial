@@ -1,12 +1,14 @@
-# REDUX-TOOLKIT WITH REACT
+# REDUX WITH JAVASCRIPT
 
-This folder contains redux-toolkit implemented with React.js
+This folder contains redux implemented with vanilla javascript
 
 ## DEPENDENCIES
 
 -   Axios
--   Redux-Toolkit
--   Redux-Redux
+-   Immer
+-   Redux
+-   Redux-Logger
+-   Redux-Thunk
 
 ## INSTALL
 
