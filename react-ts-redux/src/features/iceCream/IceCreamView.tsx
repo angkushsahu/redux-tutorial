@@ -1,9 +1,9 @@
-import { useSelector, useDispatch } from "react-redux";
+import { useAppDispatch, useAppSelector } from "../../app/hooks";
 import { iceCreamActions } from "./iceCreamSlice";
 
 const IceCreamView = () => {
-	const numberOfIceCreams = useSelector(state => state.iceCream.numberOfIceCreams);
-	const dispatch = useDispatch();
+	const numberOfIceCreams = useAppSelector(state => state.iceCream.numberOfIceCreams);
+	const dispatch = useAppDispatch();
 
 	return (
 		<section className="section">

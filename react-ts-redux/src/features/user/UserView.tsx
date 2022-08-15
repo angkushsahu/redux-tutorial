@@ -1,10 +1,10 @@
 import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useAppDispatch, useAppSelector } from "../../app/hooks";
 import { fetchUsers } from "./userSlice";
 
 const UserView = () => {
-	const user = useSelector(state => state.user);
-	const dispatch = useDispatch();
+	const user = useAppSelector(state => state.user);
+	const dispatch = useAppDispatch();
 
 	useEffect(() => {
 		dispatch(fetchUsers());

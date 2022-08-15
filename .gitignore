@@ -9,3 +9,7 @@
 # js-redux-toolkit
 /js-redux-toolkit/node_modules
 /js-redux-toolkit/reference.txt
+
+# react-ts-redux
+/react-ts-redux/node_modules
+/react-ts-redux/reference.txt
