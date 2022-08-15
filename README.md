@@ -4,10 +4,11 @@
 
 This is a repository which contains small demo projects I created while learning Redux.
 
-The repository contains two folders
+The repository contains three folders
 
--   The **js** folder contains Redux implemented with vanilla javascript
--   The **react** folder contains Redux implemented with react
+-   The **js-redux** folder contains Redux implemented with vanilla javascript
+-   The **js-redux-toolkit** folder contains redux-toolkit implemented with vanilla javascript
+-   The **react-redux** folder contains Redux implemented with react
 
 ## Install
 
