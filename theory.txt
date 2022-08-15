@@ -1,0 +1,17 @@
+REDUX
+
+Store --> Holds the state of the application
+Action --> Describes what happened in the application
+Reducer --> Ties the store and the action together. Handles the action and decides how to update the state.
+
+This can futher be understood by the following:
+State is a read only object and can only be changed by emitting actions.
+Actions are like events (just say they are like events), they are emitted in order to perform certain actions.
+Reducers are those functions which update the state based upon the type of action emitted.
+
+Responsibilities of the store function:
+1. Holds application state.
+2. Allows access to state via getState().
+3. Allows state to be updated via dispatch(action);
+4. Registers listeners via subscriber(listener);
+5. Handles unregistered of listeners via the function returned by subscribe(listener)
